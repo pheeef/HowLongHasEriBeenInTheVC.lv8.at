@@ -40,8 +40,8 @@
 </script>
 
 <main class="absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 flex flex-col justify-items-center justify-center gap-10">
-    <h1 class="text-7xl text-white">Eri has been in the VC for:</h1>
-	<div class="grid grid-flow-col gap-5 text-center auto-cols-max flex flex-row justify-center">
+    <h1 class="text-7xl text-gray-700 dark:text-white">Eri has been in the VC for:</h1>
+	<div class="grid grid-flow-col gap-5 text-center auto-cols-max justify-center">
 		<div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
 			<span class="countdown font-mono text-5xl">
 				<span style="--value:{newdate.days()};" />
@@ -67,6 +67,6 @@
 			sec
 		</div>
 	</div>
-    <h2 class="text-center">Made with ❤️ by Pheeef</h2>
+    <h2 class="text-center">v1.0.1 ~ Made with ❤️ by Pheeef</h2>
 </main>
 
