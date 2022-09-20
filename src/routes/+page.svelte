@@ -4,6 +4,10 @@
 	import updateLocale from 'dayjs/plugin/updateLocale';
 	import duration from 'dayjs/plugin/duration';
 
+	import { leaderboard } from "../leaderboard"
+    import LDBR from "../components/LDBR.svelte"
+
+
 	import { goto } from '$app/navigation';
 
 	dayjs.extend(relativeTime);
@@ -72,7 +76,15 @@
 			sec
 		</div>
 	</div>
-    <h2 class="text-center">v1.0.2 ~ Made with ❤️ by <span class="link" on:click={async () => await goto("/rickroll")}>Pheeef</span></h2>
+	<h2 class="text-5xl text-gray-700 dark:text-white text-center">Leaderboard</h2>
+	<div class="leaderboards flex gap-5 flex-col" >
+		{#each leaderboard as entry}
+         	<LDBR {...entry} />
+    	{/each}
+	</div>
+
+
+    <h2 class="text-center">v1.0.3 ~ Made with ❤️ by <span class="link" on:click={async () => await goto("/rickroll")}>Pheeef</span></h2>
 </main>
 
 <style lang="postcss">
